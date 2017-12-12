@@ -7,8 +7,11 @@
         <Menu class="javax.swing.JMenu" name="fileMenu">
           <Properties>
             <Property name="mnemonic" type="int" value="70"/>
-            <Property name="text" type="java.lang.String" value="File"/>
+            <Property name="text" type="java.lang.String" value="Zgadywanka"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Zgadywanka"/>
+          </AccessibilityProperties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="aboutMenuItem">
               <Properties>
@@ -48,6 +51,7 @@
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
     <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
@@ -79,8 +83,11 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="scrambledLabel">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Scrambled Word:"/>
+            <Property name="text" type="java.lang.String" value="Pomieszany wyraz:"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Pomieszany wyraz:"/>
+          </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
               <GridBagConstraints gridX="-1" gridY="-1" gridWidth="1" gridHeight="1" fill="2" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="12" insetsRight="6" anchor="17" weightX="0.0" weightY="0.0"/>
@@ -104,8 +111,11 @@
             <Property name="labelFor" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
               <ComponentRef name="guessedWord"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Your Guess:"/>
+            <Property name="text" type="java.lang.String" value="Twoja odpowied&#x17a;:"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Twoja odpowied&#x17a;:"/>
+          </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
               <GridBagConstraints gridX="-1" gridY="-1" gridWidth="1" gridHeight="1" fill="2" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="20" insetsRight="6" anchor="17" weightX="0.0" weightY="0.0"/>
@@ -144,9 +154,12 @@
             <Component class="javax.swing.JButton" name="guessButton">
               <Properties>
                 <Property name="mnemonic" type="int" value="71"/>
-                <Property name="text" type="java.lang.String" value="Guess"/>
+                <Property name="text" type="java.lang.String" value="Odpowied&#x17a;"/>
                 <Property name="toolTipText" type="java.lang.String" value="Guess the scrambled word."/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Odpowied&#x17a;"/>
+              </AccessibilityProperties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="guessedWordActionPerformed"/>
               </Events>
@@ -159,9 +172,12 @@
             <Component class="javax.swing.JButton" name="nextTrial">
               <Properties>
                 <Property name="mnemonic" type="int" value="78"/>
-                <Property name="text" type="java.lang.String" value="New Word"/>
+                <Property name="text" type="java.lang.String" value="Losuj nowy wyraz"/>
                 <Property name="toolTipText" type="java.lang.String" value="Fetch a new word."/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Losuj nowy"/>
+              </AccessibilityProperties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nextTrialActionPerformed"/>
               </Events>
